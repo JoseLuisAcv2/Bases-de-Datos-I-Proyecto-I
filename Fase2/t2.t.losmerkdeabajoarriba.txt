@@ -1,0 +1,13 @@
+BOMBA\_FÍSICA(\key{serial}, durGarantía, \fkey{numFactura}{FACTURA}, \fkey{codProd}{PRODUCTO})
+
+SE\_VENDE\_EN(\fkey{\key{codComp}}{COMPONENTE}, \fkey{\key{numFactura}}{FACTURA}, cantidad) \par
+
+MATERIA\_PRIMA(\key{codPrima}, descripción)\par
+
+ORDEN\_ENSAMBLAJE(\key{nroCorrelativo}, \fkey{codProd}{PRODUCTO}, cantElaborar, cantAprobada, fecha)\par
+
+ORDEN\_TALLER(\key{nroCorrelativo}, \fkey{codComp}{COMPONENTE}, cantElaborar, cantAprobada, fecha)\par
+
+ORDEN\_COMPRA(\key{nroCorrelativo}, \fkey{codComp}{COMPONENTE}, \fkey{codPrima}{MATERIA_PRIMA}, cantSolicitada, cantRecibida, fechaElaboración, fechaEntrega, costoPorUnidad)\par
+
+COMPUESTA\_POR(\fkey{\key{codComp}}{COMPONENTE}, \fkey{\key{codPrima}}{MATERIA\_PRIMA}, cantidad)\par

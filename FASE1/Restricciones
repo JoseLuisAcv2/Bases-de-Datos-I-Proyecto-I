@@ -1,0 +1,42 @@
+Los codigos son de 10 digitos
+
+La familia es una de las 4 especificadas
+
+##############################
+
+[CHECK] Todas las compañias nacionales tienen rif y las internacionales no.
+
+[CHECK] El rif es unico entre las companias que tienen rif.
+
+[CHECK] Todas los distribuidores son nacionales.
+
+##############################
+
+[CHECK] Las ordenes de compra compran o un solo tipo de componente o un  solo tipo de materia prima
+
+Las ordenes de taller o procesan una componente o manufacturan 1.
+
+##############################
+
+[CHECK] Las componentes pertenecen a su subclase respectiva.
+
+Costo promedio de las compenentes se calcula
+
+Si una componente tiene cantidad en bruto es una procesada
+
+Las compradas directamente solo tiene cantidad elaborada
+
+manufacturadas solo en proceso y elaborado
+
+El proveedor, la fecha y el costo de la última compra de cada producto se calculan.
+
+##############################
+
+La relacion ES USADA no relaciona cuerpo de bomba con cuerpo de bomba
+
+La relacion ES USADA usa a lo sumo un cuerpo de bomba en cantidad 1
+
+Los productos pertenecen a su subclase respectiva.
+
+
+

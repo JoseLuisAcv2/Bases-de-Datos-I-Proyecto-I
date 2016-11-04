@@ -1,0 +1,9 @@
+introduccion
+
+
+Este proyecto consiste en la elaboración de un sistema de gestión de los procesos de Gerencia de Planta de la empresa BGV C.A. Para ello se modelaron los datos suministrados mediante un diagrama Entidad-Relación Extendido (ER-E). A través de este diagrama se representaron las entidades relevantes
+del sistema de información de BGV C.A., así como sus interrelaciones y propiedades. 
+
+Se redactó un diccionario de datos para describir los tipos de entidades presentes en el diagrama y sus atributos. De igual manera se describieron las relaciones participantes, especializaciones, generalizaciones y categorizaciones presentes en el modelo. Adicionalmente, se agregaron restricciones explícitas en lenguaje natural y Lógica de 1er Orden para completar las especificaciones de los datos que no pueden ser representadas a través del diagrama ER-E.
+
+La modelación conceptual de los datos de BGV C.A. presenta la 1ra etapa del proyecto de implementación de la base de datos. Posteriormente se realizará la traducción al modelo relacional e implementación de la base de datos para uso de BGV C.A. en la fabricación de bombas de agua.

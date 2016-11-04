@@ -1,0 +1,62 @@
+() TIPO(Código, ...)
+() COMPONENTE(Código, ...) {clave foránea a TIPO(01)}
+() PRODUCTO(Código, ...) {clave foránea a TIPO(01)}
+() ES USADA()
+() ORDEN DE ENSAMBLAJE(Número correlativo, Código,...){clave foránea a PRODUCTO}
+() FACTURA(Número, ...)
+() BOMBA_FÍSICA(Seríal, Número, Código, ...) {claves foráneas a PRODUCTO y FACTURA}
+(07) COMPAÑÍA(Código, ...)
+(08) TELÉFONO(Códgo, valor) {clave foránea a COMPAÑÍA}
+()
+(09) ORDEN DE COMRA(Número correlativo, Código, ) {claves foráneas a COMPAÑÍA}
+
+
+
+
+
+
+
+
+
+
+**[LISTO]TIPO es especialización total y disjunta.
+
+**[LISTO]Todo COMPONENTE es referenciada por exactamente una PIEZA.
+
+**[LISTO](same)Todo PRODUCTO de tipo CUERPO DE BOMBRA es una pieza y son unicas
+
+**[LISTO]Todo PRODUCTO usa alguna pieza
+
+**[LISTO]toda PIEZA es usada en algún PRODUCTO.
+
+**[LISTO]Todo PRODUCTO es ESNSAMBLADO A TRAVÉS de una ORDEN DE ENSAMBLAJE.
+
+**[LISTO]Toda BOMBA FÍSICA es de tipo de un PRODUCTO tipo BOMBA.
+
+**[LISTO]Toda FACTURA se hace a una COMPAÑÍA de tipo DISTRIBUIDOR
+
+**[LISTO]Toda compañía de tipo distribuidor está relacionada con mínimo una factura
+
+**[LISTO]Teléfono es obligatorio para compañía.
+
+**[LISTO]Las ordenes de Taller van con componentes de tipo Procesado o Manufacturado.
+
+**[LISTO]Toda Materia Prima compone al menos un componente manufacturado.
+
+**[LISTO]Toda componente manufacturada se compone por al menos una materia prima.
+
+**[LISTO]Toda orden de compra se envía a un proveedor
+
+**[LISTO]Toda orden de compra o es para meteria prima o para una componente comprada directamente
+
+**[LISTO]Todo Componente de tipo comprada directamente se compra por al menos una orden de compra
+
+**[LISTO]Todo proveedor tiene al menos una orden de compra asociada
+
+**[LISTO[Toda materia prima se compra por al menos una orden de compra
+
+**[LISTO]toda orden de taller es a una procesada o a una manufacturada.
+
+**[LISTO]Toda Procesada se procesa con al menos una orden de taller.
+
+**[LISTO]Toda Manufacturada se elabora a través de al menos una orden de talle
